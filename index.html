@@ -1,55 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha Página</title>
-
+    <title>Pato</title>
     <style>
-        body{
-            background-color: rgb(178, 154, 201);
-
-        }
-
-        h1{
-            color: rgb(92, 26, 26);
+        .header{
+            background-color: rgb(53, 21, 66);
+            padding: 20px;
             text-align: center;
         }
 
-        p{
-            font-size: 20px;
+        *{
+            box-sizing: border-box;
         }
 
-        div{
-            background-color: rgb(173, 116, 226);
+        body{
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            font-family: sans-serif;
+        }
+
+        .Menu{
+            background-color: rgb(127, 51, 150);
+            text-align: center;
+            overflow: hidden;
+            border-width: 100;
+        }
+
+        .Menu a{
+            color: rgb(0, 0, 0);
+            padding: 14px 16px;
+        }
+
+        .Conteudo{
+            flex: 1;
+        }
+
+        .Coluna{
+            float: left;
+            padding:15px ;
+            width: 50%;
+            border-width: 100;
+            background-color: rgb(197, 111, 223);
+            border-radius: 200px;
+        }
+
+        .footer{
+            background-color: rgb(174, 90, 190);
+            color: rgb(112, 93, 93);
+            text-align: center;
             padding: 15px;
-            margin: 15px;
-            border-bottom: 10px solid rgb(41, 12, 68);
-            border-radius: 20px;
-            transition: 0.1s;
+            clear: both;
         }
 
-        div:hover{
-            box-shadow: 5px 10px rgb(74, 51, 117);
-        }
-
-        h1:hover{
-            color: blueviolet;
+        a{
+            text-decoration: none;
+            color: black;
         }
     </style>
 </head>
-
 <body>
-    <h1>Bem-vindo ao meu site</h1>
-    <div>
-        <h2>Sobre mim</h2>
-        <p>Sou estudante de tecnologia.</p>
+    <div class="header">
+        <h1> Catálogo de Produtos</h1>
+        <p>Header da Página</p>
     </div>
-    <div>
-        <h2>Hobbies</h2>
-        <p>Gosto de programação e jogos.</p>
-    </div>
-</body>
 
-</html
+    <div class="Menu">
+        <a>vodka</a>
+    </div>
+
+    <div class="Conteudo">
+        <div class="Coluna">
+            <h3>Coluna</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos omnis veniam neque laborum quas placeat debitis qui dolorum culpa excepturi. Deserunt error suscipit nobis magnam quidem nam laboriosam dignissimos eligendi!</p>
+        </div>
+        <div class="Coluna">
+            <h3>Coluna</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos omnis veniam neque laborum quas placeat debitis qui dolorum culpa excepturi. Deserunt error suscipit nobis magnam quidem nam laboriosam dignissimos eligendi!</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>footer da pagina</p>
+    </div>
+    <a href="atividades/portalnoticias.html">
+        <div>
+            <h2>Atividade Portal Noticia</h2>
+            <p>Atividade para desenvolver um portal de noticias</p>
+        </div>
+    </a>
+
+</body>
+</html>
